@@ -338,6 +338,7 @@ namespace FGCZExtensions
                             file.WriteLine("\tmonoisotopicMz = {0},", monoisotopicMz);
                             file.WriteLine("\tmZ = c(" + string.Join(",", centroidStream.Masses) + "),");
                             file.WriteLine("\tintensity = c(" + string.Join(",", centroidStream.Intensities) + ")");
+                            file.WriteLine("\tnoise = c(" + string.Join(",", centroidStream.Noises) + ")");
                             file.WriteLine(")");
 
                         }
